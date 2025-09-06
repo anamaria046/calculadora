@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="cal.css" >
+    <link rel="stylesheet" href="css/cal.css" >
 </head>
 <body>
-    <h1> Calculadora </h1>
-    
+    <h1>Calculadora</h1>
+
+  <input type="number" id="num1" placeholder="Número 1">
+  <input type="number" id="num2" placeholder="Número 2">
+  <br>
+
+  <button id="sumar">Sumar</button>
+  <button id="restar">Restar</button>
+
+  <div id="resultado">Resultado: </div>
+
+  <h2>Historial de operaciones</h2>
+  <div id="historial"></div>
+    <div id="error-msg" class="modal">
+        <p>Debe de ingresar números mayores a 0</p>
+    </div>
+
+    <script src="cal.js"></script>
 </body>
 </html>
